@@ -36,3 +36,6 @@ MongoDB is a document database with the scalability and flexibility that you wan
   MongoDB is a distributed database at its core, so high availability, horizontal scaling, and geographic distribution are built in and easy to use
 
   MongoDB is free and open-source, published under the GNU Affero General Public License
+  
+# Install MongoDB
+https://docs.mongodb.com/manual/installation/
