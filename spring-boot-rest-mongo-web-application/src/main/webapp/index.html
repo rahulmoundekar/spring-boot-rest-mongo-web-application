@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring REST Web Services</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script
+	src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<script
+	src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="spring_rest.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="alert alert-success" id="success_id" style="display: none">
+			<strong>Success!</strong> Data saved Successfully.
+		</div>
+		<div class="alert alert-danger" id="error_id" style="display: none">
+			<strong>Danger!</strong> Something went wrong! Try again.
+		</div>
+		<form class="form-horizontal mx-auto" name="productForm" action="save"
+			method="post">
+			<!-- Form Name -->
+			<strong>Product Form </strong>
+
+			<div class="form-group" id="idInput"></div>
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="name">Product
+					Name</label>
+				<div class="col-md-4">
+					<input id="name" name="name" type="text" placeholder="Product Name"
+						class="form-control input-md" required="required">
+
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="quantity">Quantity</label>
+				<div class="col-md-4">
+					<input id="quantity" name="quantity" type="text"
+						placeholder="Quantity" class="form-control input-md"
+						required="required">
+
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="price">Price</label>
+				<div class="col-md-4">
+					<input id="price" name="price" type="text" placeholder="Price"
+						class="form-control input-md" required="required">
+
+				</div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for=""></label>
+				<div class="col-md-4">
+					<button id="productFormSubmit" type="submit"
+						name="productFormSubmit" class="btn btn-success">Submit</button>
+				</div>
+			</div>
+		</form>
+		<div class="row" id="tableContainer"></div>
+	</div>
+</body>
+</html>
